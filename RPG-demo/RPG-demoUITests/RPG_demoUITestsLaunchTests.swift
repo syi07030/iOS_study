@@ -1,13 +1,13 @@
 //
-//  test1UITestsLaunchTests.swift
-//  test1UITests
+//  RPG_demoUITestsLaunchTests.swift
+//  RPG-demoUITests
 //
-//  Created by HanGeunyoung on 2021/11/06.
+//  Created by HanGeunyoung on 2022/02/09.
 //
 
 import XCTest
 
-class test1UITestsLaunchTests: XCTestCase {
+class RPG_demoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

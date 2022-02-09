@@ -1,13 +1,13 @@
 //
-//  test1UITests.swift
-//  test1UITests
+//  RPG_demoUITests.swift
+//  RPG-demoUITests
 //
-//  Created by HanGeunyoung on 2021/11/06.
+//  Created by HanGeunyoung on 2022/02/09.
 //
 
 import XCTest
 
-class test1UITests: XCTestCase {
+class RPG_demoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
