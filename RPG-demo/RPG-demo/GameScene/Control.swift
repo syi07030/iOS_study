@@ -51,6 +51,8 @@ extension GameScene {
                 ControlBall.position = ControlBase.position
             }else{
                 if AttackButtonBase.frame.contains(Location){
+                    
+                    Player.Attack_Melee()
                     print("Attack")
                 }else if ItemButtonBase.frame.contains(Location){
                     print("Item")

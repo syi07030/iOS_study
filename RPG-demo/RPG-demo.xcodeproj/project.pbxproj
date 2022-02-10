@@ -14,6 +14,8 @@
 		A700E17627B50C47008CDC52 /* RedSwanMoveS.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */; };
 		A700E17727B50C47008CDC52 /* RedSwanMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */; };
 		A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */; };
+		A700E17C27B54474008CDC52 /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17B27B54474008CDC52 /* Attack_Melee.atlas */; };
+		A700E17F27B54CD5008CDC52 /* Melee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E17E27B54CD5008CDC52 /* Melee.swift */; };
 		A7BB374627B3955300F78103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB374527B3955300F78103 /* AppDelegate.swift */; };
 		A7BB374827B3955300F78103 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374727B3955300F78103 /* GameScene.sks */; };
 		A7BB374A27B3955300F78103 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374927B3955300F78103 /* Actions.sks */; };
@@ -54,6 +56,8 @@
 		A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveS.atlas; sourceTree = "<group>"; };
 		A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveE.atlas; sourceTree = "<group>"; };
 		A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
+		A700E17B27B54474008CDC52 /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
+		A700E17E27B54CD5008CDC52 /* Melee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melee.swift; sourceTree = "<group>"; };
 		A7BB374227B3955300F78103 /* RPG-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BB374527B3955300F78103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BB374727B3955300F78103 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A700E16827B50269008CDC52 /* Character.swift */,
+				A700E17D27B54CB2008CDC52 /* Attack */,
 				A700E16F27B50959008CDC52 /* Function */,
 			);
 			path = Character;
@@ -109,6 +114,7 @@
 		A700E16C27B50648008CDC52 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				A7BB374927B3955300F78103 /* Actions.sks */,
 				A700E16A27B5063A008CDC52 /* Share.swift */,
 			);
 			path = "Supporting File";
@@ -125,13 +131,38 @@
 		A700E17027B50BFC008CDC52 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				A700E17A27B54452008CDC52 /* Attack */,
+				A700E17927B54430008CDC52 /* Move */,
+				A7BB375227B3955500F78103 /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		A700E17927B54430008CDC52 /* Move */ = {
+			isa = PBXGroup;
+			children = (
 				A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */,
 				A700E17127B50C47008CDC52 /* RedSwanMoveN.atlas */,
 				A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */,
 				A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */,
-				A7BB375227B3955500F78103 /* Assets.xcassets */,
 			);
-			path = Image;
+			path = Move;
+			sourceTree = "<group>";
+		};
+		A700E17A27B54452008CDC52 /* Attack */ = {
+			isa = PBXGroup;
+			children = (
+				A700E17B27B54474008CDC52 /* Attack_Melee.atlas */,
+			);
+			path = Attack;
+			sourceTree = "<group>";
+		};
+		A700E17D27B54CB2008CDC52 /* Attack */ = {
+			isa = PBXGroup;
+			children = (
+				A700E17E27B54CD5008CDC52 /* Melee.swift */,
+			);
+			path = Attack;
 			sourceTree = "<group>";
 		};
 		A7BB373927B3955300F78103 = {
@@ -162,7 +193,6 @@
 				A700E16527B50246008CDC52 /* Character */,
 				A700E16C27B50648008CDC52 /* Supporting File */,
 				A7BB374527B3955300F78103 /* AppDelegate.swift */,
-				A7BB374927B3955300F78103 /* Actions.sks */,
 				A7BB374D27B3955300F78103 /* GameViewController.swift */,
 				A7BB374F27B3955300F78103 /* Main.storyboard */,
 				A700E17027B50BFC008CDC52 /* Image */,
@@ -312,6 +342,7 @@
 			files = (
 				A7BB375127B3955300F78103 /* Main.storyboard in Resources */,
 				A7BB374827B3955300F78103 /* GameScene.sks in Resources */,
+				A700E17C27B54474008CDC52 /* Attack_Melee.atlas in Resources */,
 				A700E17527B50C47008CDC52 /* RedSwanMoveN.atlas in Resources */,
 				A7BB375327B3955500F78103 /* Assets.xcassets in Resources */,
 				A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */,
@@ -347,6 +378,7 @@
 				A7BB377B27B39D0A00F78103 /* Control.swift in Sources */,
 				A700E16B27B5063A008CDC52 /* Share.swift in Sources */,
 				A7BB377D27B3BF2C00F78103 /* Update.swift in Sources */,
+				A700E17F27B54CD5008CDC52 /* Melee.swift in Sources */,
 				A700E16E27B5094D008CDC52 /* Move.swift in Sources */,
 				A700E16927B50269008CDC52 /* Character.swift in Sources */,
 				A7BB374E27B3955300F78103 /* GameViewController.swift in Sources */,

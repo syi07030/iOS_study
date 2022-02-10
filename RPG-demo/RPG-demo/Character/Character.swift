@@ -14,6 +14,7 @@ class Character: SKSpriteNode {
     // Direction //
     var CurrentDirection = Direction.ST
     var LastDirection = Direction.ST
+    var AttackDirection = Direction.S
     
     // Status //
     let sp = CGFloat(5)

@@ -37,7 +37,11 @@ extension Character {
                 if LastDirection == Direction.N{
                     self.texture = SKTexture(imageNamed: "RedSwanMoveN1")
                 }
+                
+                AttackDirection = LastDirection
             }
+            
+            LastDirection = CurrentDirection
             
         case.E:
             SpeedX = sp
@@ -56,6 +60,8 @@ extension Character {
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
                 self.run(MoveAnimationAction, withKey: "Move")
+                
+                AttackDirection = CurrentDirection
                 
             }
             
@@ -79,6 +85,8 @@ extension Character {
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
                 self.run(MoveAnimationAction, withKey: "Move")
                 
+                AttackDirection = CurrentDirection
+                
             }
             
             LastDirection = CurrentDirection
@@ -101,6 +109,8 @@ extension Character {
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
                 self.run(MoveAnimationAction, withKey: "Move")
                 
+                AttackDirection = CurrentDirection
+                
             }
             
             LastDirection = CurrentDirection
@@ -122,6 +132,8 @@ extension Character {
                 
                 let MoveAnimationAction = SKAction.repeatForever(SKAction.animate(with: MoveFrame, timePerFrame: 0.125))
                 self.run(MoveAnimationAction, withKey: "Move")
+                
+                AttackDirection = CurrentDirection
                 
             }
             

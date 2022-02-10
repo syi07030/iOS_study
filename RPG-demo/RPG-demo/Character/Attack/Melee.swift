@@ -1,0 +1,53 @@
+//
+//  Melee.swift
+//  RPG-demo
+//
+//  Created by HanGeunyoung on 2022/02/10.
+//
+
+import SpriteKit
+import GameplayKit
+
+extension Character {
+    
+    func Attack_Melee(){
+        
+        let AttackBody = Character(imageNamed: "Attack_MeleeE1")
+        AttackBody.zPosition = 1
+        
+        self.addChild(AttackBody)
+        Attack_Melee_Animation(AttackBody: AttackBody)
+        
+        let WaitAction = SKAction.wait(forDuration: 0.2)
+        let RemoveAction = SKAction.run{ AttackBody.removeFromParent() } //parent는 character
+        
+//        AttackBody.run(WaitAction)
+//        AttackBody.run(RemoveAction) //이렇게 하면 거의 동시에 진행
+        
+        AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
+    }
+    
+    func Attack_Melee_Animation(AttackBody: Character){
+        
+        if self.AttackDirection == .E {
+            
+            AttackBody.position = CGPoint(x: 15, y: -12)
+            AttackBody.run(SKAction(named: "Attack_MeleeE")!)
+            
+        } else if self.AttackDirection == .W {
+            
+            AttackBody.position = CGPoint(x: -15, y: -12)
+            AttackBody.run(SKAction(named: "Attack_MeleeW")!)
+            
+        } else if self.AttackDirection == .S {
+            
+            AttackBody.position = CGPoint(x: -15, y: -12)
+            AttackBody.run(SKAction(named: "Attack_MeleeS")!)
+            
+        } else if self.AttackDirection == .N {
+            
+            AttackBody.position = CGPoint(x: -15, y: 12)
+            AttackBody.run(SKAction(named: "Attack_MeleeN")!)
+        }
+    }
+}
