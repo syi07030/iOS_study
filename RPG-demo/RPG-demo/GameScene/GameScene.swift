@@ -24,7 +24,18 @@ class GameScene: SKScene {
         
         // Controller //
         ControlBase.position = CGPoint(x: -500, y: -200)
-        //ControlBase.zPosition =
+        ControlBase.zPosition = 100 // 높은 layer 값
+        ControlBase.alpha = 0.5 // 50% 투명도
+        self.addChild(ControlBase)
+        
+        ControlBall.position = ControlBase.position
+        ControlBall.zPosition = ControlBase.zPosition
+        ControlBall.alpha = ControlBase.alpha
+        self.addChild(ControlBall)
+        
+        
+        // Player //
+        Player.zPosition = 10
         self.addChild(Player)
     }
 }
