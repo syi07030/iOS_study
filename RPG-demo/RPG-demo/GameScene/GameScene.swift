@@ -15,6 +15,12 @@ class GameScene: SKScene {
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
+    let AttackButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let AttackButton = SKSpriteNode(imageNamed: "AttackButton")
+    let ItemButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let ItemButton = SKSpriteNode(imageNamed: "ItemButton")
+    let SkillButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
+    let SkillButton = SKSpriteNode(imageNamed: "SkillButton")
     //var TouchPoint = CGPoint()
     
 //Variable_End
@@ -32,6 +38,33 @@ class GameScene: SKScene {
         ControlBall.zPosition = ControlBase.zPosition
         ControlBall.alpha = ControlBase.alpha
         self.addChild(ControlBall)
+        
+        AttackButtonBase.position = CGPoint(x: 430, y: -125)
+        AttackButtonBase.zPosition = 99
+        AttackButtonBase.alpha = 0.5
+        self.addChild(AttackButtonBase)
+        AttackButton.position = AttackButtonBase.position
+        AttackButton.zPosition = 100
+        AttackButton.alpha = 0.5
+        self.addChild(AttackButton)
+        
+        ItemButtonBase.position = CGPoint(x: 370, y: -250)
+        ItemButtonBase.zPosition = 99
+        ItemButtonBase.alpha = 0.5
+        self.addChild(ItemButtonBase)
+        ItemButton.position = ItemButtonBase.position
+        ItemButton.zPosition = 100
+        ItemButton.alpha = 0.5
+        self.addChild(ItemButton)
+        
+        SkillButtonBase.position = CGPoint(x: 550, y: -200)
+        SkillButtonBase.zPosition = 99
+        SkillButtonBase.alpha = 0.5
+        self.addChild(SkillButtonBase)
+        SkillButton.position = SkillButtonBase.position
+        SkillButton.zPosition = 100
+        SkillButton.alpha = 0.5
+        self.addChild(SkillButton)
         
         
         // Player //
