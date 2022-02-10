@@ -10,6 +10,10 @@
 		A700E16927B50269008CDC52 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E16827B50269008CDC52 /* Character.swift */; };
 		A700E16B27B5063A008CDC52 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E16A27B5063A008CDC52 /* Share.swift */; };
 		A700E16E27B5094D008CDC52 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E16D27B5094D008CDC52 /* Move.swift */; };
+		A700E17527B50C47008CDC52 /* RedSwanMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17127B50C47008CDC52 /* RedSwanMoveN.atlas */; };
+		A700E17627B50C47008CDC52 /* RedSwanMoveS.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */; };
+		A700E17727B50C47008CDC52 /* RedSwanMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */; };
+		A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */; };
 		A7BB374627B3955300F78103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB374527B3955300F78103 /* AppDelegate.swift */; };
 		A7BB374827B3955300F78103 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374727B3955300F78103 /* GameScene.sks */; };
 		A7BB374A27B3955300F78103 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374927B3955300F78103 /* Actions.sks */; };
@@ -46,6 +50,10 @@
 		A700E16827B50269008CDC52 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		A700E16A27B5063A008CDC52 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		A700E16D27B5094D008CDC52 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		A700E17127B50C47008CDC52 /* RedSwanMoveN.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveN.atlas; sourceTree = "<group>"; };
+		A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveS.atlas; sourceTree = "<group>"; };
+		A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveE.atlas; sourceTree = "<group>"; };
+		A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
 		A7BB374227B3955300F78103 /* RPG-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BB374527B3955300F78103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BB374727B3955300F78103 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -114,6 +122,18 @@
 			path = Function;
 			sourceTree = "<group>";
 		};
+		A700E17027B50BFC008CDC52 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */,
+				A700E17127B50C47008CDC52 /* RedSwanMoveN.atlas */,
+				A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */,
+				A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */,
+				A7BB375227B3955500F78103 /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		A7BB373927B3955300F78103 = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +165,7 @@
 				A7BB374927B3955300F78103 /* Actions.sks */,
 				A7BB374D27B3955300F78103 /* GameViewController.swift */,
 				A7BB374F27B3955300F78103 /* Main.storyboard */,
-				A7BB375227B3955500F78103 /* Assets.xcassets */,
+				A700E17027B50BFC008CDC52 /* Image */,
 				A7BB375427B3955500F78103 /* LaunchScreen.storyboard */,
 			);
 			path = "RPG-demo";
@@ -292,9 +312,13 @@
 			files = (
 				A7BB375127B3955300F78103 /* Main.storyboard in Resources */,
 				A7BB374827B3955300F78103 /* GameScene.sks in Resources */,
+				A700E17527B50C47008CDC52 /* RedSwanMoveN.atlas in Resources */,
 				A7BB375327B3955500F78103 /* Assets.xcassets in Resources */,
+				A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */,
 				A7BB375627B3955500F78103 /* LaunchScreen.storyboard in Resources */,
+				A700E17727B50C47008CDC52 /* RedSwanMoveE.atlas in Resources */,
 				A7BB374A27B3955300F78103 /* Actions.sks in Resources */,
+				A700E17627B50C47008CDC52 /* RedSwanMoveS.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
