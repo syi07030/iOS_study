@@ -19,7 +19,6 @@ extension GameScene {
             TouchPoint = Location
             
 //            let WalkAction = SKAction.move(to: Location, duration: 5)
-//
 //            Player.run(WalkAction)
         }
     }
