@@ -16,6 +16,7 @@
 		A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */; };
 		A700E17C27B54474008CDC52 /* Attack_Melee.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A700E17B27B54474008CDC52 /* Attack_Melee.atlas */; };
 		A700E17F27B54CD5008CDC52 /* Melee.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E17E27B54CD5008CDC52 /* Melee.swift */; };
+		A700E18127B5527B008CDC52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A700E18027B5527B008CDC52 /* Item.swift */; };
 		A7BB374627B3955300F78103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB374527B3955300F78103 /* AppDelegate.swift */; };
 		A7BB374827B3955300F78103 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374727B3955300F78103 /* GameScene.sks */; };
 		A7BB374A27B3955300F78103 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7BB374927B3955300F78103 /* Actions.sks */; };
@@ -58,6 +59,7 @@
 		A700E17427B50C47008CDC52 /* RedSwanMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = RedSwanMoveW.atlas; sourceTree = "<group>"; };
 		A700E17B27B54474008CDC52 /* Attack_Melee.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Melee.atlas; sourceTree = "<group>"; };
 		A700E17E27B54CD5008CDC52 /* Melee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melee.swift; sourceTree = "<group>"; };
+		A700E18027B5527B008CDC52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A7BB374227B3955300F78103 /* RPG-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BB374527B3955300F78103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BB374727B3955300F78103 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A700E16D27B5094D008CDC52 /* Move.swift */,
+				A700E18027B5527B008CDC52 /* Item.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A700E18127B5527B008CDC52 /* Item.swift in Sources */,
 				A7BB374C27B3955300F78103 /* GameScene.swift in Sources */,
 				A7BB377B27B39D0A00F78103 /* Control.swift in Sources */,
 				A700E16B27B5063A008CDC52 /* Share.swift in Sources */,
