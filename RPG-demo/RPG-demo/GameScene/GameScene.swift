@@ -11,7 +11,7 @@ import GameplayKit
 class GameScene: SKScene {
     
 //MARK: - Variable
-    let Player = SKSpriteNode(imageNamed: "RedSwan") //게임을 구성하는 작은 단위(물체)
+    let Player = Character(imageNamed: "RedSwan") //게임을 구성하는 작은 단위(물체)
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")

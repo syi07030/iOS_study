@@ -16,23 +16,23 @@ extension GameScene {
         
         if (Degree >= -45 && Degree < 45){
             
-            print("Player's current direction is EAST")
-            
+            Player.CurrentDirection = Direction.E
+                        
         }else if(Degree >= 45 && Degree < 135){
             
-            print("Player's current direction is NORTH")
+            Player.CurrentDirection = Direction.N
             
         }else if(Degree >= 135 && Degree < 180){
             
-            print("Player's current direction is WEST")
+            Player.CurrentDirection = Direction.W
             
         }else if(Degree >= -180 && Degree < -135){
             
-            print("Player's current direction is WEST")
+            Player.CurrentDirection = Direction.W
             
         }else if(Degree >= -135 && Degree < -45){
             
-            print("Player's current direction is SOUTH")
+            Player.CurrentDirection = Direction.S
             
         }
     }
@@ -98,6 +98,7 @@ extension GameScene {
                 MoveCenterAction.timingMode = .easeOut
                     
                 ControlBall.run(MoveCenterAction)
+                Player.CurrentDirection = Direction.ST
             }
         }
     }
