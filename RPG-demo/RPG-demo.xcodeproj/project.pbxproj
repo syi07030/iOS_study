@@ -30,6 +30,8 @@
 		A7BB376C27B3955600F78103 /* RPG_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB376B27B3955600F78103 /* RPG_demoUITestsLaunchTests.swift */; };
 		A7BB377B27B39D0A00F78103 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB377A27B39D0A00F78103 /* Control.swift */; };
 		A7BB377D27B3BF2C00F78103 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB377C27B3BF2C00F78103 /* Update.swift */; };
+		A7E3C8C027B63FD30029DD22 /* Attack_Meteor.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8BF27B63FD30029DD22 /* Attack_Meteor.atlas */; };
+		A7E3C8C227B640150029DD22 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8C127B640150029DD22 /* Meteor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		A7BB376B27B3955600F78103 /* RPG_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPG_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A7BB377A27B39D0A00F78103 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		A7BB377C27B3BF2C00F78103 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		A7E3C8BF27B63FD30029DD22 /* Attack_Meteor.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Attack_Meteor.atlas; sourceTree = "<group>"; };
+		A7E3C8C127B640150029DD22 /* Meteor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 		A700E17A27B54452008CDC52 /* Attack */ = {
 			isa = PBXGroup;
 			children = (
+				A7E3C8BF27B63FD30029DD22 /* Attack_Meteor.atlas */,
 				A700E17B27B54474008CDC52 /* Attack_Melee.atlas */,
 			);
 			path = Attack;
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A700E17E27B54CD5008CDC52 /* Melee.swift */,
+				A7E3C8C127B640150029DD22 /* Meteor.swift */,
 			);
 			path = Attack;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E3C8C027B63FD30029DD22 /* Attack_Meteor.atlas in Resources */,
 				A7BB375127B3955300F78103 /* Main.storyboard in Resources */,
 				A7BB374827B3955300F78103 /* GameScene.sks in Resources */,
 				A700E17C27B54474008CDC52 /* Attack_Melee.atlas in Resources */,
@@ -378,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A700E18127B5527B008CDC52 /* Item.swift in Sources */,
+				A7E3C8C227B640150029DD22 /* Meteor.swift in Sources */,
 				A7BB374C27B3955300F78103 /* GameScene.swift in Sources */,
 				A7BB377B27B39D0A00F78103 /* Control.swift in Sources */,
 				A700E16B27B5063A008CDC52 /* Share.swift in Sources */,

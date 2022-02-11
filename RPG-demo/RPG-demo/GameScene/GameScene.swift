@@ -28,6 +28,12 @@ class GameScene: SKScene {
     //제일 먼저 실행되는 화면 부분(딱 한 번만 실행됨)
     override func didMove(to view: SKView) {
         
+        Scene = self //gamescene을 share.swift에서 정의한 Scene으로 복사
+        
+        // Local Camera //
+        self.camera = LocalCamera
+        self.addChild(LocalCamera)
+        
         // Controller //
         ControlBase.position = CGPoint(x: -500, y: -200)
         ControlBase.zPosition = 100 // 높은 layer 값
