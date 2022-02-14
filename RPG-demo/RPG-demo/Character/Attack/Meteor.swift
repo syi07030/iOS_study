@@ -32,6 +32,19 @@ extension Character {
             
             AttackBody.run(SKAction.sequence([FadeInAction, FallAction, WaitAction, ShakeAction, RemoveAction]))
         }
+        
+        // Delay //
+        let MoveWaitAction = SKAction.wait(forDuration: 0.2)
+        let MoveDelayAction = SKAction.run{ self.MoveDelayIs = false }
+        let SkillWaitAction = SKAction.wait(forDuration: 10)
+        let SkillDelayAction = SKAction.run{ self.SkillDelayIs = false }
+        
+        Function_DelayEffect(Button: "SkillButton", Delay: 10)
+        MoveDelayIs = true
+        SkillDelayIs = true
+        
+        self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction]))
+        self.run(SKAction.sequence([SkillWaitAction, SkillDelayAction]))
     }
     
     func Attack_Meteor_Animation(){

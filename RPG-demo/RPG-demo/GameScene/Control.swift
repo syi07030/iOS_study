@@ -52,7 +52,9 @@ extension GameScene {
             }else{
                 if AttackButtonBase.frame.contains(Location){
                     
-                    Player.Attack_Melee()
+                    if Player.AttackDelayIs == false{
+                        Player.Attack_Melee()
+                    }
                     
                 }else if ItemButtonBase.frame.contains(Location){
                     
@@ -60,7 +62,9 @@ extension GameScene {
                     
                 }else if SkillButtonBase.frame.contains(Location){
                     
-                    Player.Attack_Meteor()
+                    if Player.SkillDelayIs == false{
+                        Player.Attack_Meteor()
+                    }
                 }
             }
         }

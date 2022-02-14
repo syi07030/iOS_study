@@ -18,6 +18,7 @@ extension Character {
         self.addChild(AttackBody)
         Attack_Melee_Animation(AttackBody: AttackBody)
         
+        // Action //
         let WaitAction = SKAction.wait(forDuration: 0.2)
         let RemoveAction = SKAction.run{ AttackBody.removeFromParent() } //parent는 character
         
@@ -25,6 +26,20 @@ extension Character {
 //        AttackBody.run(RemoveAction) //이렇게 하면 거의 동시에 진행
         
         AttackBody.run(SKAction.sequence([WaitAction, RemoveAction]))
+        
+        // Delay //
+        let MoveWaitAction = SKAction.wait(forDuration: 0.2)
+        let MoveDelayAction = SKAction.run{ self.MoveDelayIs = false }
+        let AttackWaitAction = SKAction.wait(forDuration: 0.5)
+        let AttackDelayAction = SKAction.run{ self.AttackDelayIs = false }
+        
+        Function_DelayEffect(Button: "AttackButton", Delay: 0.5)
+        MoveDelayIs = true
+        AttackDelayIs = true
+        
+        self.run(SKAction.sequence([MoveWaitAction, MoveDelayAction]))
+        self.run(SKAction.sequence([AttackWaitAction, AttackDelayAction]))
+        
     }
     
     func Attack_Melee_Animation(AttackBody: Character){
