@@ -11,7 +11,9 @@ import GameplayKit
 class GameScene: SKScene {
     
 //MARK: - Variable
-    let Player = Character(imageNamed: "RedSwan") //게임을 구성하는 작은 단위(물체)
+    var GameData = NSMutableDictionary()
+    
+    var Player = Character() //게임을 구성하는 작은 단위(물체)
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
@@ -73,8 +75,11 @@ class GameScene: SKScene {
         self.addChild(SkillButton)
         
         
-        // Player //
-        Player.zPosition = 10
-        self.addChild(Player)
+        // Data //
+        let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
+        GameData = NSMutableDictionary(contentsOfFile: Path!)!
+        Data_Player()
+        
+        
     }
 }
