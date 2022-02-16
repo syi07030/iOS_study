@@ -23,5 +23,35 @@ extension GameScene {
         
     }
 // Player_End
+    
+    
+// MARK: - Monster
+    func Data_Monster(){
+        
+        let MonsterGroupData = GameData["MonsterGroup"] as! [String:Any]
+        
+        for (_, value) in MonsterGroupData{ //value: 개별적 몬스터 data
+            
+            let Data = value as! [String:Any]
+            let PositionX = Data["PositionX"] as! CGFloat
+            let PositionY = Data["PositionY"] as! CGFloat
+            let SP = Data["SP"] as! CGFloat
+            
+            Monster = Character(imageNamed: "Archer")
+            Monster.sp = SP
+            Monster.PositionX = PositionX
+            Monster.PositionY = PositionY
+            Monster.position = CGPoint(x: PositionX, y: PositionY)
+            Monster.zPosition = 9
+            
+            MonsterGroup.append(Monster)
+            
+            self.addChild(Monster)
+            
+        }
+                
+                
+    }
+// Monster_End
 }
 

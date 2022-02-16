@@ -35,6 +35,10 @@
 		A7E3C8C427B652540029DD22 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8C327B652540029DD22 /* Delay.swift */; };
 		A7E3C8C627BA3EAE0029DD22 /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8C527BA3EAE0029DD22 /* GameData.plist */; };
 		A7E3C8C927BA3FA90029DD22 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8C827BA3FA90029DD22 /* Data.swift */; };
+		A7E3C8CE27BA446A0029DD22 /* ArcherMoveS.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CA27BA446A0029DD22 /* ArcherMoveS.atlas */; };
+		A7E3C8CF27BA446A0029DD22 /* ArcherMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CB27BA446A0029DD22 /* ArcherMoveN.atlas */; };
+		A7E3C8D027BA446A0029DD22 /* ArcherMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CC27BA446A0029DD22 /* ArcherMoveE.atlas */; };
+		A7E3C8D127BA446A0029DD22 /* ArcherMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CD27BA446A0029DD22 /* ArcherMoveW.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		A7E3C8C327B652540029DD22 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		A7E3C8C527BA3EAE0029DD22 /* GameData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
 		A7E3C8C827BA3FA90029DD22 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A7E3C8CA27BA446A0029DD22 /* ArcherMoveS.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveS.atlas; sourceTree = "<group>"; };
+		A7E3C8CB27BA446A0029DD22 /* ArcherMoveN.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveN.atlas; sourceTree = "<group>"; };
+		A7E3C8CC27BA446A0029DD22 /* ArcherMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveE.atlas; sourceTree = "<group>"; };
+		A7E3C8CD27BA446A0029DD22 /* ArcherMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveW.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 		A700E17927B54430008CDC52 /* Move */ = {
 			isa = PBXGroup;
 			children = (
+				A7E3C8CC27BA446A0029DD22 /* ArcherMoveE.atlas */,
+				A7E3C8CB27BA446A0029DD22 /* ArcherMoveN.atlas */,
+				A7E3C8CA27BA446A0029DD22 /* ArcherMoveS.atlas */,
+				A7E3C8CD27BA446A0029DD22 /* ArcherMoveW.atlas */,
 				A700E17327B50C47008CDC52 /* RedSwanMoveE.atlas */,
 				A700E17127B50C47008CDC52 /* RedSwanMoveN.atlas */,
 				A700E17227B50C47008CDC52 /* RedSwanMoveS.atlas */,
@@ -369,9 +381,13 @@
 				A7E3C8C627BA3EAE0029DD22 /* GameData.plist in Resources */,
 				A7E3C8C027B63FD30029DD22 /* Attack_Meteor.atlas in Resources */,
 				A7BB375127B3955300F78103 /* Main.storyboard in Resources */,
+				A7E3C8CE27BA446A0029DD22 /* ArcherMoveS.atlas in Resources */,
+				A7E3C8CF27BA446A0029DD22 /* ArcherMoveN.atlas in Resources */,
 				A7BB374827B3955300F78103 /* GameScene.sks in Resources */,
 				A700E17C27B54474008CDC52 /* Attack_Melee.atlas in Resources */,
+				A7E3C8D127BA446A0029DD22 /* ArcherMoveW.atlas in Resources */,
 				A700E17527B50C47008CDC52 /* RedSwanMoveN.atlas in Resources */,
+				A7E3C8D027BA446A0029DD22 /* ArcherMoveE.atlas in Resources */,
 				A7BB375327B3955500F78103 /* Assets.xcassets in Resources */,
 				A700E17827B50C47008CDC52 /* RedSwanMoveW.atlas in Resources */,
 				A7BB375627B3955500F78103 /* LaunchScreen.storyboard in Resources */,

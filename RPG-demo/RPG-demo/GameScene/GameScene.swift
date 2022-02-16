@@ -15,6 +15,9 @@ class GameScene: SKScene {
     
     var Player = Character() //게임을 구성하는 작은 단위(물체)
     
+    var MonsterGroup = [Character]()
+    var Monster = Character()
+    
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
     let AttackButtonBase = SKSpriteNode(imageNamed: "ButtonBase")
@@ -79,7 +82,7 @@ class GameScene: SKScene {
         let Path = Bundle.main.path(forResource: "GameData", ofType: "plist")
         GameData = NSMutableDictionary(contentsOfFile: Path!)!
         Data_Player()
-        
+        Data_Monster()
         
     }
 }
