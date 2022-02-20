@@ -39,6 +39,7 @@
 		A7E3C8CF27BA446A0029DD22 /* ArcherMoveN.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CB27BA446A0029DD22 /* ArcherMoveN.atlas */; };
 		A7E3C8D027BA446A0029DD22 /* ArcherMoveE.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CC27BA446A0029DD22 /* ArcherMoveE.atlas */; };
 		A7E3C8D127BA446A0029DD22 /* ArcherMoveW.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A7E3C8CD27BA446A0029DD22 /* ArcherMoveW.atlas */; };
+		A7E3C8D327C1FCEC0029DD22 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		A7E3C8CB27BA446A0029DD22 /* ArcherMoveN.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveN.atlas; sourceTree = "<group>"; };
 		A7E3C8CC27BA446A0029DD22 /* ArcherMoveE.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveE.atlas; sourceTree = "<group>"; };
 		A7E3C8CD27BA446A0029DD22 /* ArcherMoveW.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArcherMoveW.atlas; sourceTree = "<group>"; };
+		A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				A700E16D27B5094D008CDC52 /* Move.swift */,
 				A700E18027B5527B008CDC52 /* Item.swift */,
 				A7E3C8C327B652540029DD22 /* Delay.swift */,
+				A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				A700E16B27B5063A008CDC52 /* Share.swift in Sources */,
 				A7BB377D27B3BF2C00F78103 /* Update.swift in Sources */,
 				A700E17F27B54CD5008CDC52 /* Melee.swift in Sources */,
+				A7E3C8D327C1FCEC0029DD22 /* PhysicsBody.swift in Sources */,
 				A700E16E27B5094D008CDC52 /* Move.swift in Sources */,
 				A7E3C8C927BA3FA90029DD22 /* Data.swift in Sources */,
 				A700E16927B50269008CDC52 /* Character.swift in Sources */,

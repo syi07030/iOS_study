@@ -15,6 +15,13 @@ let LocalCamera = SKCameraNode()
 // Variable_End
 // MARK: - Enumeration
 
+// BodyType //
+enum BodyType: UInt32{
+    
+    case Player = 1
+    case Monster = 2
+}
+
 // Direction //
 enum Direction {
     

@@ -19,6 +19,8 @@ extension GameScene {
         Player = Character(imageNamed: "RedSwan")
         Player.sp = SP
         Player.zPosition = 10
+        Player.PhysicsBody_Player()
+        
         self.addChild(Player)
         
     }
@@ -42,7 +44,8 @@ extension GameScene {
             Monster.PositionX = PositionX
             Monster.PositionY = PositionY
             Monster.position = CGPoint(x: PositionX, y: PositionY)
-            Monster.zPosition = 9
+            Monster.zPosition = 10
+            Monster.PhysicsBody_Monster()
             
             MonsterGroup.append(Monster)
             
