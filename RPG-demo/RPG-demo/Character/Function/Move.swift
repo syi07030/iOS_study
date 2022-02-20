@@ -23,19 +23,19 @@ extension Character {
                 removeAction(forKey: "Move")
                 
                 if LastDirection == Direction.E{
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveE1")
+                    self.texture = SKTexture(imageNamed: self.Costume+"MoveE1")
                 }
                 
                 if LastDirection == Direction.W{
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveW1")
+                    self.texture = SKTexture(imageNamed: self.Costume+"MoveW1")
                 }
                 
                 if LastDirection == Direction.S{
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveS1")
+                    self.texture = SKTexture(imageNamed: self.Costume+"MoveS1")
                 }
                 
                 if LastDirection == Direction.N{
-                    self.texture = SKTexture(imageNamed: "RedSwanMoveN1")
+                    self.texture = SKTexture(imageNamed: self.Costume+"MoveN1")
                 }
                 
                 AttackDirection = LastDirection
@@ -49,12 +49,12 @@ extension Character {
             
             if CurrentDirection != LastDirection{
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveE")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume+"MoveE")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1 ... MoveAtlas.textureNames.count / 2{
                     
-                    let TextureName = "RedSwanMoveE" + "\(i)"
+                    let TextureName = self.Costume+"MoveE" + "\(i)"
                     MoveFrame.append(MoveAtlas.textureNamed(TextureName))
                 }
                 
@@ -73,12 +73,12 @@ extension Character {
             
             if CurrentDirection != LastDirection{
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveW")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume+"MoveW")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1 ... MoveAtlas.textureNames.count / 2{
                     
-                    let TextureName = "RedSwanMoveW" + "\(i)"
+                    let TextureName = self.Costume+"MoveW" + "\(i)"
                     MoveFrame.append(MoveAtlas.textureNamed(TextureName))
                 }
                 
@@ -97,12 +97,12 @@ extension Character {
             
             if CurrentDirection != LastDirection{
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveN")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume+"MoveN")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1 ... MoveAtlas.textureNames.count / 2{
                     
-                    let TextureName = "RedSwanMoveN" + "\(i)"
+                    let TextureName = self.Costume+"MoveN" + "\(i)"
                     MoveFrame.append(MoveAtlas.textureNamed(TextureName))
                 }
                 
@@ -121,12 +121,12 @@ extension Character {
             
             if CurrentDirection != LastDirection{
                 
-                let MoveAtlas = SKTextureAtlas(named: "RedSwanMoveS")
+                let MoveAtlas = SKTextureAtlas(named: self.Costume+"MoveS")
                 var MoveFrame = [SKTexture]()
                 
                 for i in 1 ... MoveAtlas.textureNames.count / 2{
                     
-                    let TextureName = "RedSwanMoveS" + "\(i)"
+                    let TextureName = self.Costume+"MoveS" + "\(i)"
                     MoveFrame.append(MoveAtlas.textureNamed(TextureName))
                 }
                 

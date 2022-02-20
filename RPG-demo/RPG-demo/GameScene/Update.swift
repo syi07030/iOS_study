@@ -16,6 +16,12 @@ extension GameScene {
         // Player //
         Player.Function_Move()
         
+        // Monster //
+        for i in 0...MonsterGroup.count - 1{
+            
+            MonsterGroup[i].Update_Monster()
+        }
+        
         // Mini Map //
         PlayerMinion.position = CGPoint.zero // Mini Map 중앙에 위치
         

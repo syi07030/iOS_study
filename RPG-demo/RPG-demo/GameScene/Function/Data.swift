@@ -14,9 +14,11 @@ extension GameScene {
     func Data_Player(){
         
         let Data = GameData["Player"] as! [String:Any]
+        let Costume = Data["Costume"] as! String
         let SP = Data["SP"] as! CGFloat
         
         Player = Character(imageNamed: "RedSwan")
+        Player.Costume = Costume
         Player.sp = SP
         Player.zPosition = 10
         Player.PhysicsBody_Player()
@@ -41,12 +43,15 @@ extension GameScene {
         for (_, value) in MonsterGroupData{ //value: 개별적 몬스터 data
             
             let Data = value as! [String:Any]
+            let Costume = Data["Costume"] as! String
             let PositionX = Data["PositionX"] as! CGFloat
             let PositionY = Data["PositionY"] as! CGFloat
             let SP = Data["SP"] as! CGFloat
             
             Monster = Character(imageNamed: "Archer")
+            Monster.Costume = Costume
             Monster.sp = SP
+            Monster.RunSP = SP
             Monster.Number = Number
             Monster.PositionX = PositionX
             Monster.PositionY = PositionY
