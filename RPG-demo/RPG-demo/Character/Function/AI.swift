@@ -50,4 +50,25 @@ extension Character {
     
 // Random Walk_End
     
+    
+// MARK: - Chase
+    func AI_Chase(Target: Character){
+        
+        DeltaX = CGFloat(Target.position.x - self.position.x)
+        DeltaY = CGFloat(Target.position.y - self.position.y)
+        
+        AdjustedPosition = Target.position
+        
+        if self.Class == "Knight" { //근거리 공격
+            
+            Chase_Melee()
+            
+        } else if self.Class == "Archer"{ //원거리 공격
+            
+            Chase_Standoff()
+        }
+        
+    }
+// Chase_End
+    
 }

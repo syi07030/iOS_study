@@ -14,7 +14,7 @@ extension Character {
     func Update_Monster(){
         
         // Status //
-        if self.WalingIs == true{
+        if self.WalkingIs == true{
             
             self.sp = WalkSP
         }else{
@@ -24,7 +24,17 @@ extension Character {
         
         
         // AI //
-        AI_RandomWalk()
+        let DistansceToPlayer = sqrt(pow(self.position.x - Scene.Player.position.x, 2) + pow(self.position.y - Scene.Player.position.y, 2))
+        
+        if DistansceToPlayer < SearchRange{
+            
+            self.WalkingIs = false
+            AI_Chase(Target: Scene.Player)
+        }else{
+            self.WalkingIs = true
+            AI_RandomWalk()
+        }
+        
     }
 // Monster_End
     

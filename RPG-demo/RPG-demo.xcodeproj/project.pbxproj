@@ -42,6 +42,7 @@
 		A7E3C8D327C1FCEC0029DD22 /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */; };
 		A7E3C8D527C219A50029DD22 /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8D427C219A50029DD22 /* AI.swift */; };
 		A7E3C8D727C21EFA0029DD22 /* CharacterUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8D627C21EFA0029DD22 /* CharacterUpdate.swift */; };
+		A7E3C8D927C227C50029DD22 /* Chase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3C8D827C227C50029DD22 /* Chase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
 		A7E3C8D427C219A50029DD22 /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		A7E3C8D627C21EFA0029DD22 /* CharacterUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterUpdate.swift; sourceTree = "<group>"; };
+		A7E3C8D827C227C50029DD22 /* Chase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				A7E3C8D227C1FCEB0029DD22 /* PhysicsBody.swift */,
 				A7E3C8D427C219A50029DD22 /* AI.swift */,
 				A7E3C8D627C21EFA0029DD22 /* CharacterUpdate.swift */,
+				A7E3C8D827C227C50029DD22 /* Chase.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E3C8D727C21EFA0029DD22 /* CharacterUpdate.swift in Sources */,
+				A7E3C8D927C227C50029DD22 /* Chase.swift in Sources */,
 				A700E18127B5527B008CDC52 /* Item.swift in Sources */,
 				A7E3C8C227B640150029DD22 /* Meteor.swift in Sources */,
 				A7BB374C27B3955300F78103 /* GameScene.swift in Sources */,

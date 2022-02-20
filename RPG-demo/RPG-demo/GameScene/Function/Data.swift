@@ -44,17 +44,21 @@ extension GameScene {
             
             let Data = value as! [String:Any]
             let Costume = Data["Costume"] as! String
+            let Class = Data["Class"] as! String
             let PositionX = Data["PositionX"] as! CGFloat
             let PositionY = Data["PositionY"] as! CGFloat
             let SP = Data["SP"] as! CGFloat
+            let SearchRange = Data["SearchRange"] as! CGFloat
             
             Monster = Character(imageNamed: "Archer")
             Monster.Costume = Costume
+            Monster.Class = Class
             Monster.sp = SP
             Monster.RunSP = SP
             Monster.Number = Number
             Monster.PositionX = PositionX
             Monster.PositionY = PositionY
+            Monster.SearchRange = SearchRange
             Monster.position = CGPoint(x: PositionX, y: PositionY)
             Monster.zPosition = 10
             Monster.PhysicsBody_Monster()

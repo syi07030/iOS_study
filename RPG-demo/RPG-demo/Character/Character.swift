@@ -20,10 +20,15 @@ class Character: SKSpriteNode {
     var PositionX = CGFloat()
     var PositionY = CGFloat()
     var Costume = String()
+    var Class = String()
     var sp = CGFloat()
     var RunSP = CGFloat()
     var WalkSP = CGFloat(1)
     var Number = Int() //몬스터 고유 번호
+    var SearchRange = CGFloat()
+    var DeltaX = CGFloat()
+    var DeltaY = CGFloat()
+    var AdjustedPosition = CGPoint()
     
     
     // Move //
@@ -37,7 +42,7 @@ class Character: SKSpriteNode {
     var SkillDelayIs = Bool(false)
     
     var StopDelayIs = Bool(false) //monster가 걷고 잠깐 멈췄다가 다시 걸을 때 사용
-    var WalingIs = Bool(true) // monster가 걸어다닐지 뛰어다닐지
+    var WalkingIs = Bool(true) // monster가 걸어다닐지 뛰어다닐지
     
 // Variable_End
     
