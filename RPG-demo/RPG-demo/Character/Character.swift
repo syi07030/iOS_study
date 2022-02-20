@@ -20,6 +20,7 @@ class Character: SKSpriteNode {
     var PositionX = CGFloat()
     var PositionY = CGFloat()
     var sp = CGFloat()
+    var Number = Int() //몬스터 고유 번호
     
     
     // Move //

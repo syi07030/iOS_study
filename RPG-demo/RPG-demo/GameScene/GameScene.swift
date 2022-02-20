@@ -14,9 +14,14 @@ class GameScene: SKScene {
     var GameData = NSMutableDictionary()
     
     var Player = Character() //게임을 구성하는 작은 단위(물체)
+    var PlayerMinion = Character()
     
     var MonsterGroup = [Character]()
     var Monster = Character()
+    var MonsterMinionGroup = [Character]()
+    var MonsterMinion = Character()
+    
+    var MiniMap = SKSpriteNode()
     
     let ControlBase = SKSpriteNode(imageNamed: "ControlBase")
     let ControlBall = SKSpriteNode(imageNamed: "ControlBall")
@@ -43,39 +48,46 @@ class GameScene: SKScene {
         ControlBase.position = CGPoint(x: -500, y: -200)
         ControlBase.zPosition = 100 // 높은 layer 값
         ControlBase.alpha = 0.5 // 50% 투명도
-        self.addChild(ControlBase)
+        LocalCamera.addChild(ControlBase)
         
         ControlBall.position = ControlBase.position
         ControlBall.zPosition = ControlBase.zPosition
         ControlBall.alpha = ControlBase.alpha
-        self.addChild(ControlBall)
+        LocalCamera.addChild(ControlBall)
         
         AttackButtonBase.position = CGPoint(x: 430, y: -125)
         AttackButtonBase.zPosition = 99
         AttackButtonBase.alpha = 0.5
-        self.addChild(AttackButtonBase)
+        LocalCamera.addChild(AttackButtonBase)
         AttackButton.position = AttackButtonBase.position
         AttackButton.zPosition = 100
         AttackButton.alpha = 1
-        self.addChild(AttackButton)
+        LocalCamera.addChild(AttackButton)
         
         ItemButtonBase.position = CGPoint(x: 370, y: -250)
         ItemButtonBase.zPosition = 99
         ItemButtonBase.alpha = 0.5
-        self.addChild(ItemButtonBase)
+        LocalCamera.addChild(ItemButtonBase)
         ItemButton.position = ItemButtonBase.position
         ItemButton.zPosition = 100
         ItemButton.alpha = 1
-        self.addChild(ItemButton)
+        LocalCamera.addChild(ItemButton)
         
         SkillButtonBase.position = CGPoint(x: 550, y: -200)
         SkillButtonBase.zPosition = 99
         SkillButtonBase.alpha = 0.5
-        self.addChild(SkillButtonBase)
+        LocalCamera.addChild(SkillButtonBase)
         SkillButton.position = SkillButtonBase.position
         SkillButton.zPosition = 100
         SkillButton.alpha = 1
-        self.addChild(SkillButton)
+        LocalCamera.addChild(SkillButton)
+        
+        // Mini Map //
+        MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
+        MiniMap.alpha = 0.8
+        MiniMap.zPosition = 99
+        MiniMap.position = CGPoint(x: (MiniMap.size.width) - (view.frame.width) + 140, y: (view.frame.height) - (MiniMap.size.height))
+        LocalCamera.addChild(MiniMap)
         
         
         // Data //

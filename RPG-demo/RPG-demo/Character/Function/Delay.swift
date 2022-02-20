@@ -30,7 +30,7 @@ extension Character {
             
         }
         
-        Scene.addChild(Circle)
+        LocalCamera.addChild(Circle)
         
         
         // Animation //

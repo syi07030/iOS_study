@@ -23,6 +23,10 @@ extension GameScene {
         
         self.addChild(Player)
         
+        PlayerMinion = Character(color: UIColor.green, size: CGSize(width: 5, height: 5))
+        MiniMap.addChild(PlayerMinion)
+        
+        
     }
 // Player_End
     
@@ -31,6 +35,8 @@ extension GameScene {
     func Data_Monster(){
         
         let MonsterGroupData = GameData["MonsterGroup"] as! [String:Any]
+        
+        var Number = Int(0)
         
         for (_, value) in MonsterGroupData{ //value: 개별적 몬스터 data
             
@@ -41,6 +47,7 @@ extension GameScene {
             
             Monster = Character(imageNamed: "Archer")
             Monster.sp = SP
+            Monster.Number = Number
             Monster.PositionX = PositionX
             Monster.PositionY = PositionY
             Monster.position = CGPoint(x: PositionX, y: PositionY)
@@ -51,6 +58,14 @@ extension GameScene {
             
             self.addChild(Monster)
             
+            MonsterMinion = Character(color: UIColor.red, size: CGSize(width: 5, height: 5))
+            MonsterMinion.Number = Number
+            
+            MonsterMinionGroup.append(MonsterMinion)
+            
+            MiniMap.addChild(MonsterMinion)
+            
+            Number += 1
         }
                 
                 
