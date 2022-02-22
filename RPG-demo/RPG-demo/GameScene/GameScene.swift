@@ -86,7 +86,8 @@ class GameScene: SKScene {
         MiniMap = SKSpriteNode(color: UIColor.black, size: CGSize(width: 200, height: 200))
         MiniMap.alpha = 0.8
         MiniMap.zPosition = 99
-        MiniMap.position = CGPoint(x: (MiniMap.size.width) - (view.frame.width) + 140, y: (view.frame.height) - (MiniMap.size.height))
+        MiniMap.position = CGPoint(x: (MiniMap.size.width) - (view.frame.width) , y: (view.frame.height)-(MiniMap.size.height))
+        //MiniMap.position = CGPoint(x: (MiniMap.size.width) - (view.frame.width) + 140, y: (view.frame.height) - (MiniMap.size.height))
         LocalCamera.addChild(MiniMap)
         
         

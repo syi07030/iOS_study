@@ -85,6 +85,7 @@ extension Character {
         }else if AbsDeltaX >= AbsDeltaY {
                 
             if AbsDeltaY < CGFloat(self.sp / 1.7) && AbsDeltaY >= 0{
+                
                 self.position.y = AdjustedPosition.y
                 self.CurrentDirection = .ST
                     

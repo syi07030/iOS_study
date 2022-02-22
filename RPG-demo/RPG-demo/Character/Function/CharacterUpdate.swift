@@ -30,6 +30,7 @@ extension Character {
             
             self.WalkingIs = false
             AI_Chase(Target: Scene.Player)
+            
         }else{
             self.WalkingIs = true
             AI_RandomWalk()
